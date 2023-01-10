@@ -28,12 +28,13 @@
 						<h3>{{ .title }}</h3>
 						<p>{{ .content | markdownify }}</p>
 					</div>
+					<a href="{{.link}}" class="stretched-link"></a>
 				</div>
 			</div>
 			{{ end }}
 		</div>
 	</div>
 </section>
-{{"<!-- /about -->" | safeHTML}}
+{{"<!-- /research -->" | safeHTML}}
 {{ end }}
 {{ end }}
