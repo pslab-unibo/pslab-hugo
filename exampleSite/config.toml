@@ -47,24 +47,19 @@ url = "#research"
 weight = 1
 
 [[Languages.en.menu.main]]
-name = "services"
-url = "#services"
+name = "team"
+url = "#team"
 weight = 2
 
 [[Languages.en.menu.main]]
-name = "portfolio"
+name = "projects"
 url = "#portfolio"
 weight = 3
 
 [[Languages.en.menu.main]]
-name = "team"
-url = "#team"
-weight = 4
-
-[[Languages.en.menu.main]]
 name = "blog"
 url = "#blog"
-weight = 5
+weight = 4
 
 [[Languages.en.menu.main]]
 name = "Dropdown"
