@@ -1,11 +1,11 @@
 ############################# feature ###################################
-feature:
-  enable : true
+about:
+  enable : false
   image : images/about/about-business-man.jpg
   image_webp : images/about/about-business-man.webp
-  title : We’re A Digital Design Agency.
+  title : Welcome to PSLab
   content : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam tempora itaque, autem dolores culpa cum mollitia voluptate nesciunt voluptatibus quasi."
-  feature_item : 
+  about_item : 
       # feature item loop
     - title : SEO Optimized
       icon : ti-world # themify icon pack : https://themify.me/themify-icons

@@ -1,7 +1,7 @@
 ############################# About ###################################
 research:
   enable : true
-  title : Research
+  title : Research Themes
   about_item :
   - icon : ti-ruler-pencil # themify icon pack : https://themify.me/themify-icons
     title : Research Theme A

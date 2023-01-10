@@ -1,9 +1,9 @@
 #################################### portfolio ###############################
-portfolio:
+projects:
   enable : true
-  title : Our Works
-  portfolio_item :
-    # portfolio item loop
+  title : Our Projects
+  projects_item :
+
     - name : Tag Design
       image : images/portfolio/portfolio-1.jpg
       image_webp : images/portfolio/portfolio-1.webp
@@ -11,7 +11,6 @@ portfolio:
       content : Lorem ipsum dolor sit amet consectetur adipisicing elit.
       link : "https://themefisher.com"
       
-    # portfolio item loop
     - name : Sound system
       image : images/portfolio/portfolio-2.jpg
       image_webp : images/portfolio/portfolio-2.webp
@@ -19,7 +18,6 @@ portfolio:
       content : Lorem ipsum dolor sit amet consectetur adipisicing elit.
       link : ""
       
-    # portfolio item loop
     - name : Clock Product
       image : images/portfolio/portfolio-3.jpg
       image_webp : images/portfolio/portfolio-3.webp
@@ -27,7 +25,6 @@ portfolio:
       content : Lorem ipsum dolor sit amet consectetur adipisicing elit.
       link : "#"
       
-    # portfolio item loop
     - name : Bottol Label
       image : images/portfolio/portfolio-4.jpg
       image_webp : images/portfolio/portfolio-4.webp
@@ -35,7 +32,6 @@ portfolio:
       content : Lorem ipsum dolor sit amet consectetur adipisicing elit.
       link : "#"
       
-    # portfolio item loop
     - name : Shopping Bag
       image : images/portfolio/portfolio-5.jpg
       image_webp : images/portfolio/portfolio-5.webp
@@ -43,7 +39,6 @@ portfolio:
       content : Lorem ipsum dolor sit amet consectetur adipisicing elit.
       link : "#"
       
-    # portfolio item loop
     - name : Tag Design
       image : images/portfolio/portfolio-6.jpg
       image_webp : images/portfolio/portfolio-6.webp
@@ -51,7 +46,6 @@ portfolio:
       content : Lorem ipsum dolor sit amet consectetur adipisicing elit.
       link : "#"
       
-    # portfolio item loop
     - name : Business Card
       image : images/portfolio/portfolio-7.jpg
       image_webp : images/portfolio/portfolio-7.webp
@@ -59,7 +53,6 @@ portfolio:
       content : Lorem ipsum dolor sit amet consectetur adipisicing elit.
       link : "#"
       
-    # portfolio item loop
     - name : Stationary Design
       image : images/portfolio/portfolio-8.jpg
       image_webp : images/portfolio/portfolio-8.webp
@@ -67,7 +60,6 @@ portfolio:
       content : Lorem ipsum dolor sit amet consectetur adipisicing elit.
       link : "#"
       
-    # portfolio item loop
     - name : Tag Design
       image : images/portfolio/portfolio-2.jpg
       image_webp : images/portfolio/portfolio-2.webp
