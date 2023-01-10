@@ -42,8 +42,8 @@ link = "plugins/google-map/map.js"
 
 ################### English Navigation ########################
 [[Languages.en.menu.main]]
-name = "about"
-url = "#about"
+name = "research"
+url = "#research"
 weight = 1
 
 [[Languages.en.menu.main]]
