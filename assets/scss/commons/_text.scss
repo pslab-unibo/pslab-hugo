@@ -1,0 +1,73 @@
+h1 {
+	font-weight: 400;
+	font-family: $title-font;
+	color: $text-color-light;
+}
+h2 {
+	font-weight: 400;
+	font-family: $title-font;
+	color: $text-color-light;
+}
+h3 {
+	font-weight: 400;
+	font-family: $title-font;
+	color: $text-color-light;
+}
+h4 {
+	font-weight: 400;
+	font-family: $title-font;
+	color: $text-color-light;
+}
+h5 {
+	font-weight: 400;
+	font-family: $title-font;
+	color: $text-color-light;
+}
+h6 {
+	font-weight: 400;
+	font-family: $title-font;
+	color: $text-color-light;
+}
+p {
+	font-family: $title-font;
+}
+
+pre {
+	color: $text-color-light;
+}
+
+.color {
+	color: $primary-color;
+}
+
+.title {
+	padding-bottom: 60px;
+	h2 {
+		text-transform: capitalize;
+		font-weight: 700;
+		font-size: 38px;
+		color: $white;
+		span {
+			color: $primary-color;
+		}
+	}
+	p {
+		color: $grey;
+	}
+}
+.title.title-white {
+	h2 {
+		color: $white;
+	}
+}
+
+.sub-title {
+	padding: 0 0 50px;
+	>h3 {
+		border-left: 3px solid $light-grey;
+		border-right: 3px solid $light-grey;
+		display: inline-block;
+		padding: 5px 25px;
+		text-transform: uppercase;
+	}
+}

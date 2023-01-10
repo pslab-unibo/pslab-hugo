@@ -1,0 +1,30 @@
+.navigation {
+	background-color: $background-darkest;
+	width: 100%;
+	margin-bottom: 0;
+}
+.navbar-dark {
+	.navbar-nav {
+		.active {
+			>.nav-link {
+				color: $primary-color;
+			}
+		}
+		.nav-link.active {
+			color: $primary-color;
+		}
+		.nav-link.show {
+			color: $primary-color;
+		}
+		.show {
+			>.nav-link {
+				color: $primary-color;
+			}
+		}
+	}
+}
+.navbar-toggler {
+	&:focus {
+		outline: 0;
+	}
+}

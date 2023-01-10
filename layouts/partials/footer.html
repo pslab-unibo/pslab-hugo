@@ -1,9 +1,10 @@
 {{"<!-- end Contact Area -->" | safeHTML}}
-<footer id="footer" class="section-bg">
+<footer id="footer" class="bg-dark">
 	<div class="container">
 		<div class="row wow fadeInUp" data-wow-duration="500ms">
 			<div class="col-xl-12">
 
+				{{ if site.Params.useSocial.enable}}
 				{{"<!-- Footer Social Links -->" | safeHTML}}
 				<div class="social-icon">
 					<ul class="list-inline">
@@ -12,6 +13,7 @@
 						{{ end }}
 					</ul>
 				</div>
+				{{ end }}
 
 				{{"<!-- copyright -->" | safeHTML}}
 				<div class="copyright text-center">
@@ -58,3 +60,4 @@
 	})(jQuery);
 </script>
 {{ end }}
+

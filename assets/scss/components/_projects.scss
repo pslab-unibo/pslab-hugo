@@ -1,0 +1,78 @@
+.portfolio-filter {
+	margin-bottom: 40px;
+	text-align: center;
+	.btn {
+		outline: 0;
+		border: 1px solid $overlay;
+		background: transparent;
+		display: inline-block;
+		font-size: 16px;
+		padding: 6px 20px;
+		font-weight: 700;
+		color: $text-color;
+		transition: .3s all;
+	}
+	.btn.active {
+		border-color: $primary-color;
+	}
+}
+.portfolio-block {
+	position: relative;
+	&:before {
+		transition: all 0.3s ease-in-out;
+		background: $white;
+		opacity: 0;
+		top: 20px;
+		right: 20px;
+		bottom: 20px;
+		left: 20px;
+		position: absolute;
+		content: '';
+	}
+	img {
+		width: 100%;
+		height: auto;
+	}
+	&:hover {
+		&:before {
+			opacity: 1;
+		}
+		.caption {
+			h4 {
+				top: 45%;
+			}
+			opacity: 1;
+			top: 55%;
+		}
+	}
+	.caption {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		opacity: 0;
+		-webkit-transform: translate(-50%, -50%);
+		transform: translate(-50%, -50%);
+		z-index: 9;
+		transition: all 0.2s ease-in-out;
+		text-align: center;
+		h4 {
+			font-size: 16px;
+			font-weight: 600;
+			a {
+				color: $grey;
+			}
+		}
+		.search-icon {
+			background: $primary-color;
+			width: 50px;
+			height: 50px;
+			color: $white;
+			display: inline-block;
+			font-size: 20px;
+			border-radius: 30px;
+			i {
+				line-height: 50px;
+			}
+		}
+	}
+}

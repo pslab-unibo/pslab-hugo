@@ -1,0 +1,47 @@
+
+.bg-base {
+	background-color: $background-color;
+}
+
+.bg-dark {
+	background-color: $background-dark !important; 
+}
+
+.bg-darkest {
+	background-color: $background-darkest !important; 
+}
+
+.bg-1 {
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.bg-2 {
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+.overlay {
+	position: relative;
+	&:before {
+		content: '';
+		background: $image-overlay;
+		position: absolute;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+	}
+}
+
+.bg-parallax {
+	background-attachment: fixed !important;
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}

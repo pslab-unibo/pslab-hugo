@@ -170,7 +170,7 @@ a:hover {
   background: #242930;
 }
 
-.parallax-section {
+.bg-parallax {
   background-attachment: fixed !important;
   background-position: center center;
   background-repeat: no-repeat;
@@ -275,7 +275,7 @@ a:hover {
   outline: 0;
 }
 
-.parallax-section {
+.bg-parallax {
   background-attachment: fixed;
   background-position: center center;
   background-repeat: no-repeat;
@@ -326,11 +326,11 @@ a:hover {
   background: #292F36;
 }
 
-.overly {
+.overlay {
   position: relative;
 }
 
-.overly:before {
+.overlay:before {
   content: '';
   background: rgba(0, 0, 0, 0.096);
   position: absolute;

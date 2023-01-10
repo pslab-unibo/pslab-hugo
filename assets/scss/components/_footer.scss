@@ -1,0 +1,44 @@
+
+.social-icon {
+	padding: 60px 0 35px;
+	ul {
+		text-align: center;
+		li {
+			margin-bottom: 4px;
+			a {
+				background-color: $overlay-dark;
+				border: 1px solid transparent;
+				display: block;
+				height: 70px;
+				width: 70px;
+				transition: all 400ms ease-out 0s;
+				&:hover {
+					background: $primary-color;
+					i {
+						color: $white;
+						opacity: 1;
+					}
+				}
+				i {
+					color: $overlay-light;
+					display: inline-block;
+					font-size: 32px;
+					line-height: 70px;
+					margin: 0;
+					opacity: 0.3;
+					transition: all 400ms ease-out 0s;
+				}
+			}
+		}
+	}
+}
+.copyright {
+	padding: 20px 0;
+	color: $white;
+	img {
+		margin-bottom: 15px;
+	}
+	p {
+		margin-top: 10px;
+	}
+}

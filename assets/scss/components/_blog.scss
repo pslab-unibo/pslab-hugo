@@ -1,0 +1,138 @@
+.post-block {
+	background-color: $background-color;
+	margin-bottom: 10px;
+	.content {
+		padding: 20px;
+		h3 {
+			margin: 0 0 6px;
+			font-size: 20px;
+			line-height: 1.5;
+			text-transform: capitalize;
+		}
+	}
+}
+.all-post {
+	margin-top: 10px;
+}
+#blog-banner {
+	padding-bottom: 100px;
+	padding-top: 150px;
+	padding-bottom: 100px;
+	padding-top: 150px;
+}
+#blog-page {
+	margin: 0 0 40px;
+	margin: 0 0 40px;
+}
+
+.post-meta {
+	font-size: 13px;
+	margin: 20px 0 0;
+	padding: 0 20px 10px;
+	background-color: $background-dark;
+	border-top: 1px solid $overlay;
+	font-size: 13px;
+	margin: 20px 0 0;
+	padding: 0 20px 10px;
+	a {
+		color: $primary-color;
+		&:hover {
+			color: $secondary-color;
+		}
+	}
+	>span {
+		color: $grey;
+		border-right: 1px solid #dedede;
+		display: inline-block;
+		font-size: 13px;
+		margin: 10px 10px 0 0;
+		padding-right: 10px;
+		border-right: 1px solid #4e595f;
+		display: inline-block;
+		font-size: 12px;
+		margin: 10px 10px 0 0;
+		padding-right: 10px;
+		&:last-child {
+			border-right: 0;
+			border-right: 0;
+		}
+		i {
+			margin-right: 5px;
+		}
+		>i {
+			margin-right: 5px;
+		}
+	}
+}
+
+.post-excerpt {
+	padding: 0 20px;
+	margin-bottom: 60px;
+	h3 {
+		a {
+			color: $black;
+		}
+	}
+	blockquote {
+		line-height: 22px;
+		margin: 20px 0;
+		font-size: 16px;
+	}
+	.more {
+		margin-top: 20px;
+		a {
+			display: inline-block;
+			font-size: 13px;
+			padding: 10px 25px;
+			&:hover {
+				background-color: $secondary-color;
+				color: $white;
+			}
+		}
+	}
+}
+
+.pagination {
+	text-align: center;
+	display: block;
+	margin-top: 20px;
+	>li {
+		display: inline-block;
+	}
+	.page-item {
+		.page-link {
+			display: inline-block;
+			width: 40px;
+			height: 40px;
+			border-radius: 0;
+			background-color: $background-dark;
+			border: 1px solid $overlay;
+			text-align: center;
+			margin-right: 6px;
+			font-weight: 700;
+			color: $text-color;
+			&:hover {
+				background: $primary-color;
+				border-color: $primary-color-dark;
+				color: $white;
+			}
+		}
+		&:first-child {
+			.page-link {
+				border-radius: 0;
+			}
+		}
+		&:last-child {
+			.page-link {
+				border-radius: 0;
+			}
+		}
+	}
+	.page-item.active {
+		.page-link {
+			background: $primary-color;
+			color: $white;
+			border-color: $primary-color-dark;
+		}
+	}
+}
