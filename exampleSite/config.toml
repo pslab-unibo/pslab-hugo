@@ -1,7 +1,7 @@
 ################################# Default configuration ###################
-baseURL = "https://demo.gethugothemes.com/meghna/examplesite/"
-title = "Meghna"
-theme = "meghna-hugo"
+baseURL = "https://demo.gethugothemes.com/ps-lab/examplesite/"
+title = "PS Lab "
+theme = "pslab-hugo"
 # post pagination
 paginate = "6"
 # post excerpt
@@ -62,24 +62,13 @@ url = "#team"
 weight = 4
 
 [[Languages.en.menu.main]]
-name = "pricing"
-url = "#pricing"
+name = "blog"
+url = "#blog"
 weight = 5
 
 [[Languages.en.menu.main]]
-name = "blog"
-url = "#blog"
-weight = 6
-
-[[Languages.en.menu.main]]
-name = "contact"
-url = "#contact"
-weight = 7
-
-
-[[Languages.en.menu.main]]
 name = "Dropdown"
-weight = 7
+weight = 6
 hasChildren = true
 
 [[Languages.en.menu.main]]
@@ -93,12 +82,6 @@ parent = "Dropdown"
 name = "Dropdown 2"
 url = "#"
 weight = 2
-
-[[Languages.en.menu.main]]
-name = "themefisher"
-url = "https://themefisher.com/"
-weight = 8
-
 
 ################### French Navigation ########################
 [[Languages.fr.menu.main]]
