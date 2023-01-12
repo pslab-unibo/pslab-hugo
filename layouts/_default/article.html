@@ -9,7 +9,7 @@
       <ul class="list-inline">
         <li class="list-inline-item">{{ dateFormat "Jan 2, 2006" .Date }}</li>
         <li class="list-inline-item">-</li>
-        <li class="list-inline-item"><a href="{{ `author/` | relLangURL }}{{ .Params.Author | urlize }}/">{{ .Params.Author }}</a></li>
+        <li class="list-inline-item"><a href="{{ `team/` | relLangURL }}{{ .Params.Author | urlize }}/">{{ .Params.Author }}</a></li>
       </ul>
 
       <p>{{ .Summary }}</p>
