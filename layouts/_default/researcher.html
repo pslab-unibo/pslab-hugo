@@ -9,7 +9,6 @@
         {{"<!-- member social profile -->" | safeHTML}}
           <div class="mask">
             <ul class="list-inline">
-              <li class="list-inline-item"><a href="{{ `team/` | relLangURL }}{{ .name | urlize }}/"> <i class="ti-info"></i></a></li>
               {{ range .social }}
               <li class="list-inline-item"><a href="{{ .link | safeURL }}"><i class="{{ .icon }}"></i></a></li>
               {{ end }}
