@@ -50,13 +50,13 @@
 							data-lightbox="image-1">
 							<i class="ti-search"></i>
 						</a>--> <!-- TODO! we wanna add a popup? Or a long description? -->
-						<h4 class="mt-3">
+						<h3 class="mt-3">
 							{{ if or (eq .link "#") (eq .link "") }}
 							{{ .name }}
 							{{ else }}
-							<a href="{{ .link | safeURL }}">{{ .name }}</a>
+							<a class="text-primary" href="{{ .link | safeURL }}">{{ .name }}</a>
 							{{ end }}
-						</h4>
+						</h3>
 						<p>{{ .content | markdownify }}</p>
 					</div>
 				</div>
