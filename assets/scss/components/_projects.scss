@@ -21,11 +21,12 @@
 	&:before {
 		transition: all 0.3s ease-in-out;
 		background: $white;
+		border: 10px solid $primary-color;
 		opacity: 0;
-		top: 20px;
-		right: 20px;
-		bottom: 20px;
-		left: 20px;
+		top: 0px;
+		right: 0px;
+		bottom: 0px;
+		left: 0px;
 		position: absolute;
 		content: '';
 	}
@@ -47,27 +48,35 @@
 	}
 	.caption {
 		position: absolute;
-		top: 50%;
-		left: 50%;
 		opacity: 0;
-		-webkit-transform: translate(-50%, -50%);
-		transform: translate(-50%, -50%);
+		// top: 50%;
+		// left: 50%;
+		// -webkit-transform: translate(-50%, -50%);
+		// transform: translate(-50%, -50%);
+		top: 50%;
+		transform: translate(0, -50%);
+		-webkit-transform: translate(0%, -50%);
+		margin: 0 20px;
 		z-index: 9;
 		transition: all 0.2s ease-in-out;
 		text-align: center;
 		h4 {
-			font-size: 16px;
+			font-size: 30px;
 			font-weight: 600;
+			text-decoration: underline;
+			text-decoration-thickness: 2px;
+			color: $primary-color;
 			a {
-				color: $grey;
+				color: $primary-color;
 			}
 		}
 		.search-icon {
+			display: inline-block;
 			background: $primary-color;
+			z-index: 0;
 			width: 50px;
 			height: 50px;
 			color: $white;
-			display: inline-block;
 			font-size: 20px;
 			border-radius: 30px;
 			i {
