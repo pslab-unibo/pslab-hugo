@@ -31,7 +31,7 @@
 					{{ end }}
 					{{ range ( $categories | uniq ) }}
 					<label class="btn">
-						<input class="portfolio-shuffle-radio" type="radio" name="shuffle-filter" value="{{ . | urlize }}" />{{ . | humanize }}
+						<input class="portfolio-shuffle-radio" type="radio" name="shuffle-filter" value="{{ . | urlize }}" />{{ .  }}
 					</label>
 					{{ end }}
 				</div>
@@ -60,7 +60,10 @@
 							<a href="{{ .link | safeURL }}">{{ .name }}</a>
 							{{ end }}
 						</h4>
-						<p>{{ .content | markdownify }}</p>
+						<div class="d-none d-sm-none d-md-block">{{ .content | markdownify }}</div>
+						<a class="d-none d-sm-inline-block d-md-none search-icon" href="{{ .link | safeURL }}">
+							<i class="ti-search"></i>
+						</a> 
 					</div>
 				</div>
 			</div>

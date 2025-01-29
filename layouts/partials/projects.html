@@ -41,7 +41,7 @@
 		<div class="row shuffle-wrapper justify-content-center" id="project-wrapper">
 			{{"<!-- portfolio item -->" | safeHTML}}
 			{{ range .projects_item }}
-			<div class="col-lg-3 col-md-4 col-6 shuffle-item project-item"
+			<div class="col-lg-3 col-md-6 col-6 shuffle-item project-item"
 				data-groups="[{{range $index, $element:= .categories }}{{if ne $index 0}},{{end}}&quot;{{. | urlize}}&quot;{{ end }}]">
 				<div class="portfolio-block mb-4">
 					<img class="img-fluid" src="{{ .image_webp | absURL }}" onerror="this.onerror=null;this.src='{{ .image | absURL }}'" alt="{{ .name }}">
@@ -53,7 +53,10 @@
 							<a href="{{ .link | safeURL }}">{{ .name }}</a>
 							{{ end }}
 						</h4>
-						<p>{{ .content | markdownify }}</p>
+						<div class="d-none d-sm-none d-md-block">{{ .content | markdownify }}</div>
+						<a class="d-none d-sm-inline-block d-md-none search-icon" href="{{ .link | safeURL }}">
+							<i class="ti-search"></i>
+						</a> 
 					</div>
 				</div>
 			</div>
