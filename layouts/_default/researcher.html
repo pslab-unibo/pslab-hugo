@@ -1,6 +1,6 @@
 {{ with .Params }}
   {{"<!-- team member -->" | safeHTML}}
-  <div class="col-lg-4 col-md-6 col-12 wow fadeInDown" data-wow-duration="500ms">
+  <div class="col-lg-3 col-md-4 col-6 wow fadeInDown" data-wow-duration="500ms">
     <div class="team-member hover-shadow h-100 d-inline-block" style="max-height: 95%">
       <div class="member-photo">
         {{"<!-- member photo -->" | safeHTML}}
@@ -20,7 +20,7 @@
       <div class="member-meta">
         <h4>{{ .name }} </h4>
         <span>{{ .designation | markdownify}}</span>
-        <p>{{ .short_description | markdownify }}</p>
+        <p class="d-none d-sm-none d-md-block">{{ .short_description | markdownify }}</p>
       </div>
     </div>
   </div>
