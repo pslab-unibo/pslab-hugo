@@ -39,18 +39,38 @@ jQuery(function ($) {
 	/*	Portfolio Filtering Hook
 	/* =========================================================================  */
 
-	var containerEl = document.querySelector('.shuffle-wrapper');
-	if (containerEl) {
-		var Shuffle = window.Shuffle;
-		var myShuffle = new Shuffle(document.querySelector('.shuffle-wrapper'), {
-			itemSelector: '.shuffle-item',
+	let portfolioEl = document.querySelector('#portfolio-wrapper');
+	if (portfolioEl) {
+		let Shuffle = window.Shuffle;
+		let myPortfolioShuffle = new Shuffle(document.querySelector('#portfolio-wrapper'), {
+			itemSelector: '.shuffle-item.portfolio-item',
 			buffer: 1
 		});
 
-		jQuery('input[name="shuffle-filter"]').on('change', function (evt) {
+		jQuery('input.portfolio-shuffle-radio').on('change', function (evt) {
 			var input = evt.currentTarget;
 			if (input.checked) {
-				myShuffle.filter(input.value);
+				myPortfolioShuffle.filter(input.value);
+			}
+		});
+	}
+
+	/* ========================================================================= */
+	/*	Portfolio Filtering Hook
+	/* =========================================================================  */
+
+	let projectEl = document.querySelector('#project-wrapper');
+	if (projectEl) {
+		let Shuffle = window.Shuffle;
+		let myProjectShuffle = new Shuffle(document.querySelector('#project-wrapper'), {
+			itemSelector: '.shuffle-item.project-item',
+			buffer: 1
+		});
+
+		jQuery('input.project-shuffle-radio').on('change', function (evt) {
+			let input = evt.currentTarget;
+			if (input.checked) {
+				myProjectShuffle.filter(input.value);
 			}
 		});
 	}

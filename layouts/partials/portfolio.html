@@ -21,7 +21,7 @@
 				<div class="btn-group portfolio-filter btn-group-toggle justify-content-center d-flex flex-wrap"
 					data-toggle="buttons">
 					<label class="btn active">
-						<input type="radio" name="shuffle-filter" value="all" checked="checked" />{{ i18n "all"}}
+						<input class="portfolio-shuffle-radio" type="radio" name="shuffle-filter" value="all" checked="checked" />{{ i18n "all"}}
 					</label>
 					{{ $categories := slice }}
 					{{ range .portfolio_item }}
@@ -31,17 +31,17 @@
 					{{ end }}
 					{{ range ( $categories | uniq ) }}
 					<label class="btn">
-						<input type="radio" name="shuffle-filter" value="{{ . | urlize }}" />{{ . | humanize }}
+						<input class="portfolio-shuffle-radio" type="radio" name="shuffle-filter" value="{{ . | urlize }}" />{{ . | humanize }}
 					</label>
 					{{ end }}
 				</div>
 			</div>
 		</div>
 
-		<div class="row shuffle-wrapper justify-content-center">
+		<div class="row shuffle-wrapper justify-content-center" id="portfolio-wrapper">
 			{{"<!-- portfolio item -->" | safeHTML}}
 			{{ range .portfolio_item }}
-			<div class="col-lg-4 col-md-6 shuffle-item"
+			<div class="col-lg-4 col-md-6 shuffle-item portfolio-item"
 				data-groups="[{{range $index, $element:= .categories }}{{if ne $index 0}},{{end}}&quot;{{. | urlize}}&quot;{{ end }}]">
 				<div class="portfolio-block mb-4">
 					<img class="img-fluid" src="{{ .image_webp | absURL }}" onerror="this.onerror=null;this.src='{{ .image | absURL }}'" alt="{{ .name }}">
